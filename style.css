@@ -1,0 +1,261 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+hr {
+    margin: 0;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.12);
+}
+
+.wrapper {
+    position: relative;
+
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 1px 30px;
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1440px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+}
+
+.header-wrapper {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.header__menu-btn {
+    position: relative;
+
+    width: 24px;
+    height: 24px;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.header__menu-btn::after {
+    content: url(img/header-menu-icon.png);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__title {
+    margin: 0 auto 0 35px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.header__more-btn {
+    position: relative;
+
+    width: 12px;
+    height: 24px;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.header__more-btn::after {
+    content: url(img/header-more-icon.png);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tools,
+.color,
+.switcher {
+    position: absolute;
+    width: 225px;
+
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.tools__btn,
+.color__btn,
+.switcher__btn {
+    position: relative;
+
+    padding: 0 0 0 70px;
+    width: 100%;
+    height: 50px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: rgb(150, 150, 150);
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.tools__btn:hover,
+.color__btn:hover,
+.color__btn:focus,
+.switcher__btn:hover,
+.switcher__btn:focus {
+    color: rgb(0, 0, 0);
+    background-color: rgb(240, 240, 240);
+}
+
+.active {
+    color: rgb(0, 0, 0);
+    background-color: rgb(240, 240, 240);
+}
+
+.tools {
+    top: 30px;
+    left: 30px;
+}
+
+.tools__btn--paint::before {
+    content: url(img/tools-paint.png);
+
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+}
+
+.tools__btn--pencil::before {
+    content: url(img/tools-pencil.png);
+
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+}
+
+.tools__btn--choose {
+    padding: 0;
+}
+
+.tools__btn--choose::before {
+    content: url(img/tools-choose.png);
+
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+}
+
+.tools__color-label {
+    box-sizing: border-box;
+    padding-left: 70px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tools__color-input {
+    display: none;
+}
+
+.tools__color-label img {
+    padding: 0 10px !important;
+}
+
+.tools__btn--move::before {
+    content: url(img/tools-move.png);
+
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+}
+
+.tools__btn--transform::before {
+    content: url(img/tools-transform.png);
+
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+}
+
+.color {
+    top: 320px;
+    left: 30px;
+}
+
+.color__btn-color {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+.color__btn--current .color__btn-color {
+    background: #888888;
+}
+
+.color__btn--prev .color__btn-color {
+    background: #31f863;
+}
+
+.color__btn--red .color__btn-color {
+    background: #ff0000;
+}
+
+.color__btn--blue .color__btn-color {
+    background: #0000ff;
+}
+
+.switcher {
+    top: 30px;
+    right: 30px;
+}
+
+.switcher__btn {
+    padding: 0 20px;
+}
+
+.canvas {
+    margin: 30px auto 0;
+    width: 512px;
+    height: 512px;
+    border: 1px solid #d3d3d3;
+}

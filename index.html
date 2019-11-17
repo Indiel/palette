@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>CodeJam-Palette</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header-wrapper">
+            <button class="header__menu-btn"></button>
+            <a class="header__title" href="#">CodeJam-Palette</a>
+            <button class="header__more-btn"></button>
+
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="tools">
+                <button class="tools__btn tools__btn--paint">Paint bucket</button>
+                <button class="tools__btn tools__btn--pencil active">Pencil</button>
+                <hr>
+                <button class="tools__btn tools__btn--choose">
+                    <label class="tools__color-label">
+                        Choose color 
+                        <input class="tools__color-input" type="color" name="color">
+                    </label>
+                </button>
+                <!-- <hr> -->
+                <!-- <button class="tools__btn tools__btn--move">Move</button> -->
+                <!-- <button class="tools__btn tools__btn--transform">Transform</button> -->
+            </section>
+            <section class="color">
+                <button class="color__btn color__btn--current"><span class="color__btn-color"></span>Current color</button>
+                <button class="color__btn color__btn--prev"><span class="color__btn-color"></span>Prev color</button>
+                <hr>
+                <button class="color__btn color__btn--red"><span class="color__btn-color"></span>Red</button>
+                <button class="color__btn color__btn--blue"><span class="color__btn-color"></span>Blue</button>
+            </section>
+            <section class="switcher">
+                <button id="btn-4" data-size="4" class="switcher__btn switcher__btn--4">4x4</button>
+                <button id="btn-32" data-size="32" class="switcher__btn switcher__btn--32">32x32</button>
+                <button id="btn-128" data-size="128" class="switcher__btn switcher__btn--128">128x128</button>
+                <button id="btn-256" data-size="256" class="switcher__btn switcher__btn--256">256x256</button>
+                <button id="btn-512" data-size="512" class="switcher__btn switcher__btn--512 active">512x512</button>
+                <button id="btn-image" data-size="image" class="switcher__btn switcher__btn--image">Image</button>
+            </section>
+            <section class="canvas">
+                <canvas width="512" height="512" id="canvas"></canvas>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
