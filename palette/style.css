@@ -143,7 +143,7 @@ hr {
     left: 30px;
 }
 
-.tools__btn--paint::before {
+.tools__btn--fill::before {
     content: url(img/tools-paint.png);
 
     position: absolute;
@@ -229,7 +229,7 @@ hr {
 }
 
 .color__btn--current .color__btn-color {
-    background: #888888;
+    background: #000000;
 }
 
 .color__btn--prev .color__btn-color {

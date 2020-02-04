@@ -21,8 +21,8 @@
     <main class="main">
         <div class="wrapper">
             <section class="tools">
-                <button class="tools__btn tools__btn--paint">Paint bucket</button>
-                <button class="tools__btn tools__btn--pencil active">Pencil</button>
+                <button data-tool="bucket" class="tools__btn tools__btn--fill">Fill bucket</button>
+                <button data-tool="pencil" class="tools__btn tools__btn--pencil">Pencil</button>
                 <hr>
                 <button class="tools__btn tools__btn--choose">
                     <label class="tools__color-label">
@@ -42,12 +42,12 @@
                 <button class="color__btn color__btn--blue"><span class="color__btn-color"></span>Blue</button>
             </section>
             <section class="switcher">
-                <button id="btn-4" data-size="4" class="switcher__btn switcher__btn--4">4x4</button>
-                <button id="btn-32" data-size="32" class="switcher__btn switcher__btn--32">32x32</button>
-                <button id="btn-128" data-size="128" class="switcher__btn switcher__btn--128">128x128</button>
-                <button id="btn-256" data-size="256" class="switcher__btn switcher__btn--256">256x256</button>
-                <button id="btn-512" data-size="512" class="switcher__btn switcher__btn--512 active">512x512</button>
-                <button id="btn-image" data-size="image" class="switcher__btn switcher__btn--image">Image</button>
+                <button id="btn-4" data-pixel-size="128" class="switcher__btn switcher__btn--4">4x4</button>
+                <button id="btn-16" data-pixel-size="32" class="switcher__btn switcher__btn--16">16x16</button>
+                <button id="btn-32" data-pixel-size="16" class="switcher__btn switcher__btn--32">32x32</button>
+                <button id="btn-128" data-pixel-size="4" class="switcher__btn switcher__btn--128">128x128</button>
+                <button id="btn-256" data-pixel-size="2" class="switcher__btn switcher__btn--256">256x256</button>
+                <button id="btn-512" data-pixel-size="1" class="switcher__btn switcher__btn--512">512x512</button>
             </section>
             <section class="canvas">
                 <canvas width="512" height="512" id="canvas"></canvas>
